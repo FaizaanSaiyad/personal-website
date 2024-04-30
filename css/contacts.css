@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: "header header header" "image image image" "contact contact contact" "footer footer footer";
+
+    height: 100vh;
+    margin: 2em;
+
+}
+
+header {
+    grid-area: header;
+    background: #f00553;
+}
+
+section.image {
+    grid-area: image;
+    background: url('') no-repeat;
+}
+
+
+section.contact {
+    grid-area: contact;
+    background: #0274f7;
+}
+
+
+footer {
+    grid-area: footer;
+    background:#0ad103   
+}

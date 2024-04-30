@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-areas: "header header header" "pic1 pic2 pic3" "pic4 pic5 pic6" "footer footer footer";
+    height: 100vh;
+    margin: 2em;
+
+}
+
+header {
+    grid-area: header;
+    background: #fffadf;
+}
+
+.pic1 {
+    grid-area: pic1;
+    background:url('https://images.theconversation.com/files/439369/original/file-20220104-19-12kg47e.jpg?ixlib=rb-1.1.0&rect=0%2C31%2C5334%2C3170&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip') no-repeat;
+}
+
+.pic2 {
+    grid-area: pic2;
+    background: #333333;
+}
+
+.pic3 {
+    grid-area: pic3;
+    background: #202020;
+}
+
+.pic4 {
+    grid-area: pic4;
+    background: #dfb5b5;
+}
+
+.pic5 {
+    grid-area: pic5;
+    background: #e60303 
+}
+
+.pic6 {
+    grid-area: pic6;
+    background: #c4b35a;
+}
+
+footer {
+    grid-area: footer;
+    background: #fffadf;
+}
